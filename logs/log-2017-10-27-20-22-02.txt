@@ -1,8 +1,0 @@
-Couldn't open /tmp/.mount_Godot-SvF42y/usr/bin/godot.pck
-Couldn't open godot.pck
-OpenGL ES 3.0 Renderer: GeForce GTX 980 Ti/PCIe/SSE2
-GLES3: max ubo light: 409
-GLES3: max ubo reflections: 455, ubo size: 144
-**ERROR**: Class EditorSettings already has a method set_favorite_dirs
-   At: core/class_db.cpp:1182:bind_methodfi() - Method/Function Failed, returning: __null
-Registered interface Native mobile
