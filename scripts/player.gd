@@ -10,6 +10,11 @@ const MAX_JUMP_COUNT = 2
 var jump_count = 0
 var in_air     = false
 
+var respawn_position = Vector2()
+
+func _ready():
+	respawn_position = position
+
 func _physics_process(delta):
 	var target_speed = 0
 
@@ -37,3 +42,7 @@ func damage(amount):
 	global.health -= amount
 	if global.health <= 0:
 		global.health = 0
+		# Game Over
+		print("DEBUG: Game Over!")
+
+	position = respawn_position
