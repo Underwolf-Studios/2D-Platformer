@@ -1,0 +1,181 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://sprites/square-black.png" type="Texture" id=1]
+[ext_resource path="res://sprites/square-blue.png" type="Texture" id=2]
+[ext_resource path="res://sprites/square-green.png" type="Texture" id=3]
+[ext_resource path="res://sprites/square-orange.png" type="Texture" id=4]
+[ext_resource path="res://sprites/square-purple.png" type="Texture" id=5]
+[ext_resource path="res://sprites/square-red.png" type="Texture" id=6]
+[ext_resource path="res://sprites/square-white.png" type="Texture" id=7]
+[ext_resource path="res://sprites/square-yellow.png" type="Texture" id=8]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 32, 32 )
+
+[node name="tileset" type="Node"]
+
+[node name="squares" type="Node" parent="."]
+
+[node name="square-black" type="Sprite" parent="squares"]
+
+texture = ExtResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="static_body" type="StaticBody2D" parent="squares/square-black"]
+
+editor/display_folded = true
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="collision_shape" type="CollisionShape2D" parent="squares/square-black/static_body"]
+
+shape = SubResource( 1 )
+
+[node name="square-blue" type="Sprite" parent="squares"]
+
+position = Vector2( 128, 0 )
+texture = ExtResource( 2 )
+
+[node name="static_body" type="StaticBody2D" parent="squares/square-blue"]
+
+editor/display_folded = true
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="collision_shape" type="CollisionShape2D" parent="squares/square-blue/static_body"]
+
+shape = SubResource( 1 )
+
+[node name="square-green" type="Sprite" parent="squares"]
+
+position = Vector2( 256, 0 )
+texture = ExtResource( 3 )
+
+[node name="static_body" type="StaticBody2D" parent="squares/square-green"]
+
+editor/display_folded = true
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="collision_shape" type="CollisionShape2D" parent="squares/square-green/static_body"]
+
+shape = SubResource( 1 )
+
+[node name="square-orange" type="Sprite" parent="squares"]
+
+position = Vector2( 384, 0 )
+texture = ExtResource( 4 )
+
+[node name="static_body" type="StaticBody2D" parent="squares/square-orange"]
+
+editor/display_folded = true
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="collision_shape" type="CollisionShape2D" parent="squares/square-orange/static_body"]
+
+shape = SubResource( 1 )
+
+[node name="square-purple" type="Sprite" parent="squares"]
+
+position = Vector2( 512, 0 )
+texture = ExtResource( 5 )
+
+[node name="static_body" type="StaticBody2D" parent="squares/square-purple"]
+
+editor/display_folded = true
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="collision_shape" type="CollisionShape2D" parent="squares/square-purple/static_body"]
+
+shape = SubResource( 1 )
+
+[node name="square-red" type="Sprite" parent="squares"]
+
+position = Vector2( 640, 0 )
+texture = ExtResource( 6 )
+
+[node name="static_body" type="StaticBody2D" parent="squares/square-red"]
+
+editor/display_folded = true
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="collision_shape" type="CollisionShape2D" parent="squares/square-red/static_body"]
+
+shape = SubResource( 1 )
+
+[node name="square-white" type="Sprite" parent="squares"]
+
+position = Vector2( 768, 0 )
+texture = ExtResource( 7 )
+
+[node name="static_body" type="StaticBody2D" parent="squares/square-white"]
+
+editor/display_folded = true
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="collision_shape" type="CollisionShape2D" parent="squares/square-white/static_body"]
+
+shape = SubResource( 1 )
+
+[node name="square-yellow" type="Sprite" parent="squares"]
+
+position = Vector2( 896, 0 )
+texture = ExtResource( 8 )
+
+[node name="static_body" type="StaticBody2D" parent="squares/square-yellow"]
+
+editor/display_folded = true
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="collision_shape" type="CollisionShape2D" parent="squares/square-yellow/static_body"]
+
+shape = SubResource( 1 )
+
+
