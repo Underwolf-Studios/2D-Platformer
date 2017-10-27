@@ -32,3 +32,8 @@ func _input(event):
 	if event.is_action_pressed("move_up") and jump_count < MAX_JUMP_COUNT:
 		velocity.y = -JUMP_FORCE
 		jump_count += 1
+
+func damage(amount):
+	global.health -= amount
+	if global.health <= 0:
+		global.health = 0
