@@ -20,6 +20,7 @@ extents = Vector2( 32, 32 )
 
 [node name="square-black" type="Sprite" parent="squares"]
 
+editor/display_folded = true
 texture = ExtResource( 1 )
 _sections_unfolded = [ "Transform" ]
 
@@ -34,12 +35,14 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="collision_shape" type="CollisionShape2D" parent="squares/square-black/static_body"]
+[node name="collision" type="CollisionShape2D" parent="squares/square-black/static_body"]
 
+editor/display_folded = true
 shape = SubResource( 1 )
 
 [node name="square-blue" type="Sprite" parent="squares"]
 
+editor/display_folded = true
 position = Vector2( 128, 0 )
 texture = ExtResource( 2 )
 
@@ -54,12 +57,14 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="collision_shape" type="CollisionShape2D" parent="squares/square-blue/static_body"]
+[node name="collision" type="CollisionShape2D" parent="squares/square-blue/static_body"]
 
+editor/display_folded = true
 shape = SubResource( 1 )
 
 [node name="square-green" type="Sprite" parent="squares"]
 
+editor/display_folded = true
 position = Vector2( 256, 0 )
 texture = ExtResource( 3 )
 
@@ -74,12 +79,14 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="collision_shape" type="CollisionShape2D" parent="squares/square-green/static_body"]
+[node name="collision" type="CollisionShape2D" parent="squares/square-green/static_body"]
 
+editor/display_folded = true
 shape = SubResource( 1 )
 
 [node name="square-orange" type="Sprite" parent="squares"]
 
+editor/display_folded = true
 position = Vector2( 384, 0 )
 texture = ExtResource( 4 )
 
@@ -94,12 +101,14 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="collision_shape" type="CollisionShape2D" parent="squares/square-orange/static_body"]
+[node name="collision" type="CollisionShape2D" parent="squares/square-orange/static_body"]
 
+editor/display_folded = true
 shape = SubResource( 1 )
 
 [node name="square-purple" type="Sprite" parent="squares"]
 
+editor/display_folded = true
 position = Vector2( 512, 0 )
 texture = ExtResource( 5 )
 
@@ -114,16 +123,17 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="collision_shape" type="CollisionShape2D" parent="squares/square-purple/static_body"]
+[node name="collision" type="CollisionShape2D" parent="squares/square-purple/static_body"]
 
 shape = SubResource( 1 )
 
 [node name="square-red" type="Sprite" parent="squares"]
 
+editor/display_folded = true
 position = Vector2( 640, 0 )
 texture = ExtResource( 6 )
 
-[node name="static_body" type="StaticBody2D" parent="squares/square-red"]
+[node name="collision" type="StaticBody2D" parent="squares/square-red"]
 
 editor/display_folded = true
 input_pickable = false
@@ -134,12 +144,13 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="collision_shape" type="CollisionShape2D" parent="squares/square-red/static_body"]
+[node name="collision_shape" type="CollisionShape2D" parent="squares/square-red/collision"]
 
 shape = SubResource( 1 )
 
 [node name="square-white" type="Sprite" parent="squares"]
 
+editor/display_folded = true
 position = Vector2( 768, 0 )
 texture = ExtResource( 7 )
 
@@ -154,12 +165,13 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="collision_shape" type="CollisionShape2D" parent="squares/square-white/static_body"]
+[node name="collision" type="CollisionShape2D" parent="squares/square-white/static_body"]
 
 shape = SubResource( 1 )
 
 [node name="square-yellow" type="Sprite" parent="squares"]
 
+editor/display_folded = true
 position = Vector2( 896, 0 )
 texture = ExtResource( 8 )
 
@@ -174,7 +186,7 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="collision_shape" type="CollisionShape2D" parent="squares/square-yellow/static_body"]
+[node name="collision" type="CollisionShape2D" parent="squares/square-yellow/static_body"]
 
 shape = SubResource( 1 )
 
