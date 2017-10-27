@@ -45,4 +45,7 @@ func damage(amount):
 		# Game Over
 		print("DEBUG: Game Over!")
 
+	respawn()
+
+func respawn():
 	position = respawn_position
