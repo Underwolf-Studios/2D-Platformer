@@ -20,6 +20,9 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="player" parent="." instance=ExtResource( 3 )]
 
+z = 10
+_sections_unfolded = [ "Transform", "Z" ]
+
 [node name="world" type="Node2D" parent="."]
 
 [node name="environment" type="TileMap" parent="world"]

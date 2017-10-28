@@ -2,6 +2,7 @@ extends CanvasLayer
 
 func _ready():
 	global.connect("health_changed", self, "_on_global_health_changed")
+	global.connect("score_changed", self, "_on_global_score_changed")
 	print("DEBUG: HUD loaded")
 
 func _on_global_health_changed(health):
@@ -23,3 +24,6 @@ func _on_global_health_changed(health):
 		$"health/tex_health_3".hide()
 
 	print("DEBUG: Health HUD Updated")
+
+func _on_global_score_changed(score):
+	$"score/lbl_score".text = str(score)
