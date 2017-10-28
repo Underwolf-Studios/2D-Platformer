@@ -1,33 +1,33 @@
 [gd_scene load_steps=10 format=2]
 
-[ext_resource path="res://sprites/square-black.png" type="Texture" id=1]
-[ext_resource path="res://sprites/square-blue.png" type="Texture" id=2]
-[ext_resource path="res://sprites/square-green.png" type="Texture" id=3]
-[ext_resource path="res://sprites/square-orange.png" type="Texture" id=4]
-[ext_resource path="res://sprites/square-purple.png" type="Texture" id=5]
-[ext_resource path="res://sprites/square-red.png" type="Texture" id=6]
-[ext_resource path="res://sprites/square-white.png" type="Texture" id=7]
-[ext_resource path="res://sprites/square-yellow.png" type="Texture" id=8]
+[ext_resource path="res://sprites/square_black.png" type="Texture" id=1]
+[ext_resource path="res://sprites/square_blue.png" type="Texture" id=2]
+[ext_resource path="res://sprites/square_green.png" type="Texture" id=3]
+[ext_resource path="res://sprites/square_orange.png" type="Texture" id=4]
+[ext_resource path="res://sprites/square_red.png" type="Texture" id=5]
+[ext_resource path="res://sprites/square_white.png" type="Texture" id=6]
+[ext_resource path="res://sprites/square_yellow.png" type="Texture" id=7]
 
 [sub_resource type="RectangleShape2D" id=1]
 
 custom_solver_bias = 0.0
 extents = Vector2( 32, 32 )
 
+[sub_resource type="StreamTexture" id=2]
+
+load_path = "res://.import/square_purple.png-900cb0e87802bcf7de807842c34d83f2.stex"
+
 [node name="tileset" type="Node"]
 
 [node name="squares" type="Node" parent="."]
 
-[node name="square-black" type="Sprite" parent="squares"]
+[node name="square_black" type="Sprite" parent="squares"]
 
-<<<<<<< HEAD
 editor/display_folded = true
-=======
->>>>>>> 9cb44ec... Created Basic Tileset
+position = Vector2( 32, 32 )
 texture = ExtResource( 1 )
-_sections_unfolded = [ "Transform" ]
 
-[node name="static_body" type="StaticBody2D" parent="squares/square-black"]
+[node name="static_body" type="StaticBody2D" parent="squares/square_black"]
 
 editor/display_folded = true
 input_pickable = false
@@ -37,27 +37,19 @@ constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
+_sections_unfolded = [ "Collision" ]
 
-<<<<<<< HEAD
-[node name="collision" type="CollisionShape2D" parent="squares/square-black/static_body"]
+[node name="collision" type="CollisionShape2D" parent="squares/square_black/static_body"]
 
-editor/display_folded = true
-=======
-[node name="collision_shape" type="CollisionShape2D" parent="squares/square-black/static_body"]
-
->>>>>>> 9cb44ec... Created Basic Tileset
 shape = SubResource( 1 )
 
-[node name="square-blue" type="Sprite" parent="squares"]
+[node name="square_blue" type="Sprite" parent="squares"]
 
-<<<<<<< HEAD
 editor/display_folded = true
-=======
->>>>>>> 9cb44ec... Created Basic Tileset
-position = Vector2( 128, 0 )
+position = Vector2( 160, 32 )
 texture = ExtResource( 2 )
 
-[node name="static_body" type="StaticBody2D" parent="squares/square-blue"]
+[node name="static_body" type="StaticBody2D" parent="squares/square_blue"]
 
 editor/display_folded = true
 input_pickable = false
@@ -67,27 +59,19 @@ constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
+_sections_unfolded = [ "Collision" ]
 
-<<<<<<< HEAD
-[node name="collision" type="CollisionShape2D" parent="squares/square-blue/static_body"]
+[node name="collision" type="CollisionShape2D" parent="squares/square_blue/static_body"]
 
-editor/display_folded = true
-=======
-[node name="collision_shape" type="CollisionShape2D" parent="squares/square-blue/static_body"]
-
->>>>>>> 9cb44ec... Created Basic Tileset
 shape = SubResource( 1 )
 
-[node name="square-green" type="Sprite" parent="squares"]
+[node name="square_green" type="Sprite" parent="squares"]
 
-<<<<<<< HEAD
 editor/display_folded = true
-=======
->>>>>>> 9cb44ec... Created Basic Tileset
-position = Vector2( 256, 0 )
+position = Vector2( 288, 32 )
 texture = ExtResource( 3 )
 
-[node name="static_body" type="StaticBody2D" parent="squares/square-green"]
+[node name="static_body" type="StaticBody2D" parent="squares/square_green"]
 
 editor/display_folded = true
 input_pickable = false
@@ -97,27 +81,19 @@ constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
+_sections_unfolded = [ "Collision" ]
 
-<<<<<<< HEAD
-[node name="collision" type="CollisionShape2D" parent="squares/square-green/static_body"]
+[node name="collision" type="CollisionShape2D" parent="squares/square_green/static_body"]
 
-editor/display_folded = true
-=======
-[node name="collision_shape" type="CollisionShape2D" parent="squares/square-green/static_body"]
-
->>>>>>> 9cb44ec... Created Basic Tileset
 shape = SubResource( 1 )
 
-[node name="square-orange" type="Sprite" parent="squares"]
+[node name="square_orange" type="Sprite" parent="squares"]
 
-<<<<<<< HEAD
 editor/display_folded = true
-=======
->>>>>>> 9cb44ec... Created Basic Tileset
-position = Vector2( 384, 0 )
+position = Vector2( 416, 32 )
 texture = ExtResource( 4 )
 
-[node name="static_body" type="StaticBody2D" parent="squares/square-orange"]
+[node name="static_body" type="StaticBody2D" parent="squares/square_orange"]
 
 editor/display_folded = true
 input_pickable = false
@@ -127,27 +103,42 @@ constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
+_sections_unfolded = [ "Collision" ]
 
-<<<<<<< HEAD
-[node name="collision" type="CollisionShape2D" parent="squares/square-orange/static_body"]
+[node name="collision" type="CollisionShape2D" parent="squares/square_orange/static_body"]
 
-editor/display_folded = true
-=======
-[node name="collision_shape" type="CollisionShape2D" parent="squares/square-orange/static_body"]
-
->>>>>>> 9cb44ec... Created Basic Tileset
 shape = SubResource( 1 )
 
-[node name="square-purple" type="Sprite" parent="squares"]
+[node name="square_purple" type="Sprite" parent="squares"]
 
-<<<<<<< HEAD
 editor/display_folded = true
-=======
->>>>>>> 9cb44ec... Created Basic Tileset
-position = Vector2( 512, 0 )
+position = Vector2( 544, 32 )
+texture = SubResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="static_body" type="StaticBody2D" parent="squares/square_purple"]
+
+editor/display_folded = true
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+_sections_unfolded = [ "Collision" ]
+
+[node name="collision" type="CollisionShape2D" parent="squares/square_purple/static_body"]
+
+shape = SubResource( 1 )
+
+[node name="square_red" type="Sprite" parent="squares"]
+
+editor/display_folded = true
+position = Vector2( 672, 32 )
 texture = ExtResource( 5 )
 
-[node name="static_body" type="StaticBody2D" parent="squares/square-purple"]
+[node name="static_body" type="StaticBody2D" parent="squares/square_red"]
 
 editor/display_folded = true
 input_pickable = false
@@ -157,29 +148,19 @@ constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
+_sections_unfolded = [ "Collision" ]
 
-<<<<<<< HEAD
-[node name="collision" type="CollisionShape2D" parent="squares/square-purple/static_body"]
-=======
-[node name="collision_shape" type="CollisionShape2D" parent="squares/square-purple/static_body"]
->>>>>>> 9cb44ec... Created Basic Tileset
+[node name="collision" type="CollisionShape2D" parent="squares/square_red/static_body"]
 
 shape = SubResource( 1 )
 
-[node name="square-red" type="Sprite" parent="squares"]
+[node name="square_white" type="Sprite" parent="squares"]
 
-<<<<<<< HEAD
 editor/display_folded = true
-position = Vector2( 640, 0 )
+position = Vector2( 800, 32 )
 texture = ExtResource( 6 )
 
-[node name="collision" type="StaticBody2D" parent="squares/square-red"]
-=======
-position = Vector2( 640, 0 )
-texture = ExtResource( 6 )
-
-[node name="static_body" type="StaticBody2D" parent="squares/square-red"]
->>>>>>> 9cb44ec... Created Basic Tileset
+[node name="static_body" type="StaticBody2D" parent="squares/square_white"]
 
 editor/display_folded = true
 input_pickable = false
@@ -189,25 +170,19 @@ constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
+_sections_unfolded = [ "Collision" ]
 
-<<<<<<< HEAD
-[node name="collision_shape" type="CollisionShape2D" parent="squares/square-red/collision"]
-=======
-[node name="collision_shape" type="CollisionShape2D" parent="squares/square-red/static_body"]
->>>>>>> 9cb44ec... Created Basic Tileset
+[node name="collision" type="CollisionShape2D" parent="squares/square_white/static_body"]
 
 shape = SubResource( 1 )
 
-[node name="square-white" type="Sprite" parent="squares"]
+[node name="square_yellow" type="Sprite" parent="squares"]
 
-<<<<<<< HEAD
 editor/display_folded = true
-=======
->>>>>>> 9cb44ec... Created Basic Tileset
-position = Vector2( 768, 0 )
+position = Vector2( 928, 32 )
 texture = ExtResource( 7 )
 
-[node name="static_body" type="StaticBody2D" parent="squares/square-white"]
+[node name="static_body" type="StaticBody2D" parent="squares/square_yellow"]
 
 editor/display_folded = true
 input_pickable = false
@@ -217,40 +192,9 @@ constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
+_sections_unfolded = [ "Collision" ]
 
-<<<<<<< HEAD
-[node name="collision" type="CollisionShape2D" parent="squares/square-white/static_body"]
-=======
-[node name="collision_shape" type="CollisionShape2D" parent="squares/square-white/static_body"]
->>>>>>> 9cb44ec... Created Basic Tileset
-
-shape = SubResource( 1 )
-
-[node name="square-yellow" type="Sprite" parent="squares"]
-
-<<<<<<< HEAD
-editor/display_folded = true
-=======
->>>>>>> 9cb44ec... Created Basic Tileset
-position = Vector2( 896, 0 )
-texture = ExtResource( 8 )
-
-[node name="static_body" type="StaticBody2D" parent="squares/square-yellow"]
-
-editor/display_folded = true
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
-
-<<<<<<< HEAD
-[node name="collision" type="CollisionShape2D" parent="squares/square-yellow/static_body"]
-=======
-[node name="collision_shape" type="CollisionShape2D" parent="squares/square-yellow/static_body"]
->>>>>>> 9cb44ec... Created Basic Tileset
+[node name="collision" type="CollisionShape2D" parent="squares/square_yellow/static_body"]
 
 shape = SubResource( 1 )
 

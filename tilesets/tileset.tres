@@ -1,22 +1,25 @@
 [gd_resource type="TileSet" load_steps=10 format=2]
 
-[ext_resource path="res://sprites/square-black.png" type="Texture" id=1]
-[ext_resource path="res://sprites/square-blue.png" type="Texture" id=2]
-[ext_resource path="res://sprites/square-green.png" type="Texture" id=3]
-[ext_resource path="res://sprites/square-orange.png" type="Texture" id=4]
-[ext_resource path="res://sprites/square-purple.png" type="Texture" id=5]
-[ext_resource path="res://sprites/square-red.png" type="Texture" id=6]
-[ext_resource path="res://sprites/square-white.png" type="Texture" id=7]
-[ext_resource path="res://sprites/square-yellow.png" type="Texture" id=8]
+[ext_resource path="res://sprites/square_black.png" type="Texture" id=1]
+[ext_resource path="res://sprites/square_blue.png" type="Texture" id=2]
+[ext_resource path="res://sprites/square_green.png" type="Texture" id=3]
+[ext_resource path="res://sprites/square_orange.png" type="Texture" id=4]
+[ext_resource path="res://sprites/square_red.png" type="Texture" id=5]
+[ext_resource path="res://sprites/square_white.png" type="Texture" id=6]
+[ext_resource path="res://sprites/square_yellow.png" type="Texture" id=7]
 
 [sub_resource type="RectangleShape2D" id=1]
 
 custom_solver_bias = 0.0
 extents = Vector2( 32, 32 )
 
+[sub_resource type="StreamTexture" id=2]
+
+load_path = "res://.import/square_purple.png-900cb0e87802bcf7de807842c34d83f2.stex"
+
 [resource]
 
-0/name = "square-black"
+0/name = "square_black"
 0/texture = ExtResource( 1 )
 0/tex_offset = Vector2( 0, 0 )
 0/modulate = Color( 1, 1, 1, 1 )
@@ -28,7 +31,7 @@ extents = Vector2( 32, 32 )
 "shape": SubResource( 1 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 32, 32 )
 } ]
-1/name = "square-blue"
+1/name = "square_blue"
 1/texture = ExtResource( 2 )
 1/tex_offset = Vector2( 0, 0 )
 1/modulate = Color( 1, 1, 1, 1 )
@@ -40,7 +43,7 @@ extents = Vector2( 32, 32 )
 "shape": SubResource( 1 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 32, 32 )
 } ]
-2/name = "square-green"
+2/name = "square_green"
 2/texture = ExtResource( 3 )
 2/tex_offset = Vector2( 0, 0 )
 2/modulate = Color( 1, 1, 1, 1 )
@@ -52,7 +55,7 @@ extents = Vector2( 32, 32 )
 "shape": SubResource( 1 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 32, 32 )
 } ]
-3/name = "square-orange"
+3/name = "square_orange"
 3/texture = ExtResource( 4 )
 3/tex_offset = Vector2( 0, 0 )
 3/modulate = Color( 1, 1, 1, 1 )
@@ -64,8 +67,8 @@ extents = Vector2( 32, 32 )
 "shape": SubResource( 1 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 32, 32 )
 } ]
-4/name = "square-purple"
-4/texture = ExtResource( 5 )
+4/name = "square_purple"
+4/texture = SubResource( 2 )
 4/tex_offset = Vector2( 0, 0 )
 4/modulate = Color( 1, 1, 1, 1 )
 4/region = Rect2( 0, 0, 64, 64 )
@@ -76,8 +79,8 @@ extents = Vector2( 32, 32 )
 "shape": SubResource( 1 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 32, 32 )
 } ]
-5/name = "square-red"
-5/texture = ExtResource( 6 )
+5/name = "square_red"
+5/texture = ExtResource( 5 )
 5/tex_offset = Vector2( 0, 0 )
 5/modulate = Color( 1, 1, 1, 1 )
 5/region = Rect2( 0, 0, 64, 64 )
@@ -88,8 +91,8 @@ extents = Vector2( 32, 32 )
 "shape": SubResource( 1 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 32, 32 )
 } ]
-6/name = "square-white"
-6/texture = ExtResource( 7 )
+6/name = "square_white"
+6/texture = ExtResource( 6 )
 6/tex_offset = Vector2( 0, 0 )
 6/modulate = Color( 1, 1, 1, 1 )
 6/region = Rect2( 0, 0, 64, 64 )
@@ -100,8 +103,8 @@ extents = Vector2( 32, 32 )
 "shape": SubResource( 1 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 32, 32 )
 } ]
-7/name = "square-yellow"
-7/texture = ExtResource( 8 )
+7/name = "square_yellow"
+7/texture = ExtResource( 7 )
 7/tex_offset = Vector2( 0, 0 )
 7/modulate = Color( 1, 1, 1, 1 )
 7/region = Rect2( 0, 0, 64, 64 )
