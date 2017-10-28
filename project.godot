@@ -19,6 +19,12 @@ config/icon="res://icon.png"
 global="*res://scripts/global.gd"
 scene_manager="*res://scenes/scene_manager.tscn"
 
+[display]
+
+window/size/width=1280
+window/size/height=720
+window/stretch/aspect="keep"
+
 [gdnative]
 
 singletons=[  ]

@@ -11,4 +11,4 @@ func _on_checkpoint_body_entered(body):
 
 		body.respawn_position = position
 
-		print("DEBUG: Checkpoint activated")
+		print("INFO: Checkpoint activated")
