@@ -8,7 +8,7 @@ func _ready():
 	global.connect("game_over", self, "_on_global_game_over")
 
 func _input(event):
-	if event.is_action_pressed("pause"):
+	if event.is_action_pressed("pause") and !global.game_over:
 		game_paused = not game_paused
 		get_tree().set_pause(game_paused)
 		$pause_menu.set_visible(game_paused)
@@ -57,6 +57,7 @@ func _on_btn_restart_pressed():
 #	scene_manager.change_scene(str(get_tree().get_current_scene()))
 	get_tree().reload_current_scene()
 	global.health = global.MAX_HEALTH
+	global.game_over = false
 
 func _on_btn_menu_pressed():
 	get_tree().set_pause(false)
