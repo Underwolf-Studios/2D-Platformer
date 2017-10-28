@@ -5,7 +5,7 @@ var game_paused = false
 func _ready():
 	global.connect("health_changed", self, "_on_global_health_changed")
 	global.connect("score_changed", self, "_on_global_score_changed")
-	print("DEBUG: HUD loaded")
+	global.connect("game_over", self, "_on_global_game_over")
 
 func _input(event):
 	if event.is_action_pressed("pause"):
@@ -33,16 +33,30 @@ func _on_global_health_changed(health):
 		$"health/tex_health_2".hide()
 		$"health/tex_health_3".hide()
 
-	print("DEBUG: Health HUD Updated")
+	print("INFO: Health HUD Updated")
 
 func _on_global_score_changed(score):
 	$"score/lbl_score".text = str(score)
+
+func _on_global_game_over(game_over):
+	if game_over:
+		get_tree().set_pause(true)
+		$game_over_menu.show()
+		$health.hide()
+		$score.hide()
 
 func _on_btn_resume_pressed():
 	get_tree().set_pause(false)
 	$pause_menu.hide()
 	$health.show()
 	$score.show()
+
+func _on_btn_restart_pressed():
+	get_tree().set_pause(false)
+	$game_over_menu.hide()
+#	scene_manager.change_scene(str(get_tree().get_current_scene()))
+	get_tree().reload_current_scene()
+	global.health = global.MAX_HEALTH
 
 func _on_btn_menu_pressed():
 	pass

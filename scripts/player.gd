@@ -41,9 +41,8 @@ func _input(event):
 func damage(amount):
 	global.health -= amount
 	if global.health <= 0:
-		global.health = 0
 		# Game Over
-		print("DEBUG: Game Over!")
+		global.game_over = true
 
 	respawn()
 

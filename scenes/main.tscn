@@ -62,11 +62,11 @@ scale = Vector2( 3, 1 )
 
 [node name="checkpoint_1" parent="world" instance=ExtResource( 6 )]
 
-position = Vector2( 928, -352 )
+position = Vector2( 928, -320 )
 
 [node name="checkpoint_2" parent="world" instance=ExtResource( 6 )]
 
-position = Vector2( 2400, -544 )
+position = Vector2( 2400, -512 )
 
 [node name="pickup_score_1" parent="world" instance=ExtResource( 7 )]
 
