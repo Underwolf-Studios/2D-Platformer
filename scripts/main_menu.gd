@@ -1,10 +1,10 @@
 extends CanvasLayer
 
 func _on_btn_resume_pressed():
-	print("INFO: Resume Game")
+	global.resume_game()
 
 func _on_btn_new_game_pressed():
-	scene_manager.change_scene(scene_manager.LEVEL_1)
+	global.new_game()
 
 func _on_btn_levels_pressed():
 	$levels_menu.show()

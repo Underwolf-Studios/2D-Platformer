@@ -6,6 +6,7 @@ func _ready():
 	global.connect("health_changed", self, "_on_global_health_changed")
 	global.connect("score_changed", self, "_on_global_score_changed")
 	global.connect("game_over", self, "_on_global_game_over")
+	global.connect("level_finished", self, "_on_global_level_finished")
 
 func _input(event):
 	if event.is_action_pressed("pause") and !global.game_over:
@@ -45,11 +46,22 @@ func _on_global_game_over(game_over):
 		$health.hide()
 		$score.hide()
 
+func _on_global_level_finished(level_finished):
+	if level_finished:
+		get_tree().set_pause(true)
+		$level_finished_menu.show()
+		$health.hide()
+		$score.hide()
+
 func _on_btn_resume_pressed():
 	get_tree().set_pause(false)
 	$pause_menu.hide()
 	$health.show()
 	$score.show()
+
+func _on_btn_continue_pressed():
+	get_tree().set_pause(false)
+	global.next_level()
 
 func _on_btn_restart_pressed():
 	get_tree().set_pause(false)

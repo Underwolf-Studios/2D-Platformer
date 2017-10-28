@@ -1,0 +1,127 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://scenes/hud.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://tilesets/tileset.tres" type="TileSet" id=3]
+[ext_resource path="res://scenes/enemy.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/checkpoint.tscn" type="PackedScene" id=5]
+[ext_resource path="res://scenes/pickup_health.tscn" type="PackedScene" id=6]
+[ext_resource path="res://scenes/pickup_score.tscn" type="PackedScene" id=7]
+[ext_resource path="res://scenes/level_exit.tscn" type="PackedScene" id=8]
+
+[node name="level_1" type="Node"]
+
+[node name="hud" parent="." instance=ExtResource( 1 )]
+
+layer = 2
+
+[node name="player" parent="." instance=ExtResource( 2 )]
+
+position = Vector2( 640, 360 )
+z = 10
+_sections_unfolded = [ "Transform", "Z" ]
+
+[node name="world" type="Node2D" parent="."]
+
+[node name="environment" type="TileMap" parent="world"]
+
+mode = 0
+tile_set = ExtResource( 3 )
+cell_size = Vector2( 64, 64 )
+cell_quadrant_size = 16
+cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+cell_half_offset = 2
+cell_tile_origin = 0
+cell_y_sort = false
+collision_use_kinematic = false
+collision_friction = 1.0
+collision_bounce = 0.0
+collision_layer = 1
+collision_mask = 1
+occluder_light_mask = 1
+tile_data = PoolIntArray( -1900553, 6, -1900552, 6, -1900551, 6, -1900550, 6, -1900549, 6, -1900548, 6, -1900547, 6, -1900546, 6, -1900545, 6, -1966080, 6, -1966079, 6, -1966078, 6, -1966077, 6, -1966076, 6, -1966075, 6, -1966074, 6, -1966073, 6, -1966072, 6, -1966071, 6, -1966070, 6, -1966069, 6, -1966068, 6, -1966067, 6, -1966066, 6, -1966065, 6, -1966064, 6, -1966063, 6, -1966062, 6, -1966061, 6, -1966060, 6, -1966059, 6, -1966058, 6, -1966057, 6, -1966056, 6, -1966055, 6, -1966054, 6, -1966053, 6, -1966052, 6, -1966051, 6, -1966050, 6, -1966049, 6, -1966048, 6, -1966047, 6, -1966046, 6, -1966045, 6, -1966044, 6, -1966043, 6, -1966042, 6, -1966041, 6, -1966040, 6, -1966039, 6, -1966038, 6, -1966037, 6, -1966036, 6, -1966035, 6, -1835017, 6, -1900499, 6, -1769481, 6, -1834963, 6, -1703945, 6, -1769427, 6, -1638409, 6, -1703897, 6, -1703896, 6, -1703892, 6, -1703891, 6, -1572873, 6, -1638361, 6, -1638355, 6, -1507337, 6, -1572833, 6, -1572832, 6, -1572831, 6, -1572830, 6, -1572825, 6, -1572819, 6, -1441801, 6, -1507289, 6, -1507283, 6, -1376265, 6, -1441753, 6, -1441747, 6, -1310729, 6, -1376217, 6, -1376211, 6, -1245193, 6, -1310701, 6, -1310700, 6, -1310699, 6, -1310698, 6, -1310697, 6, -1310681, 6, -1310675, 6, -1179657, 6, -1245145, 6, -1245139, 6, -1114121, 6, -1179609, 6, -1179603, 6, -1048585, 6, -1114073, 6, -1114067, 6, -983049, 6, -1048569, 6, -1048568, 6, -1048567, 6, -1048566, 6, -1048565, 6, -1048564, 6, -1048537, 6, -1048531, 6, -917513, 6, -983001, 6, -982995, 6, -851977, 6, -917465, 6, -917459, 6, -786441, 6, -851933, 6, -851932, 6, -851931, 6, -851930, 6, -851929, 6, -851923, 6, -720905, 6, -720904, 6, -720903, 6, -720902, 6, -720901, 6, -720900, 6, -720899, 6, -720898, 6, -720897, 6, -786393, 6, -655361, 6, -720857, 6, -589825, 6, -655321, 6, -524289, 6, -589824, 6, -589823, 6, -589822, 6, -589821, 6, -589820, 6, -589819, 6, -589785, 6, -524283, 6, -524249, 6, -458747, 6, -458717, 6, -458716, 6, -458715, 6, -458714, 6, -458713, 6, -393211, 6, -393177, 6, -327675, 6, -327641, 6, -196617, 6, -196616, 6, -196615, 6, -196614, 6, -196613, 6, -196612, 6, -196611, 6, -196610, 6, -196609, 6, -262144, 6, -262143, 6, -262142, 6, -262141, 6, -262140, 6, -262139, 6, -262134, 6, -262133, 6, -262122, 6, -262121, 6, -262120, 6, -262119, 6, -262118, 6, -262117, 6, -262116, 6, -262115, 6, -262105, 6, -131081, 6, -196569, 6, -65545, 6, -131033, 6, -9, 6, -65497, 6, 65527, 6, 39, 6, 131063, 6, 65567, 6, 65568, 6, 65569, 6, 65570, 6, 65571, 6, 65572, 6, 65573, 6, 65574, 6, 65575, 6, 196599, 6, 131103, 6, 262135, 6, 262136, 6, 262137, 6, 262138, 6, 262139, 6, 262140, 6, 262141, 6, 196639, 6, 327671, 6, 262166, 6, 262167, 6, 262168, 6, 262169, 6, 262170, 6, 262171, 6, 262172, 6, 262173, 6, 262174, 6, 262175, 6, 393207, 6, 327702, 6, 458743, 6, 393238, 6, 524279, 6, 458774, 6, 589815, 6, 589816, 6, 589817, 6, 589818, 6, 589819, 6, 589820, 6, 589821, 6, 589822, 6, 589823, 6, 524288, 6, 524289, 6, 524290, 6, 524291, 6, 524292, 6, 524293, 6, 524294, 6, 524295, 6, 524296, 6, 524297, 6, 524298, 6, 524299, 6, 524310, 6 )
+
+[node name="enemies" type="Node" parent="world"]
+
+[node name="enemy_1" parent="world/enemies" instance=ExtResource( 4 )]
+
+position = Vector2( 1088, 544 )
+scale = Vector2( 10, 1 )
+
+[node name="enemy_2" parent="world/enemies" instance=ExtResource( 4 )]
+
+position = Vector2( 512, -224 )
+scale = Vector2( 4, 1 )
+
+[node name="enemy_3" parent="world/enemies" instance=ExtResource( 4 )]
+
+position = Vector2( 1088, -224 )
+scale = Vector2( 10, 1 )
+
+[node name="checkpoints" type="Node" parent="world"]
+
+[node name="checkpoint_1" parent="world/checkpoints" instance=ExtResource( 5 )]
+
+position = Vector2( 160, -640 )
+
+[node name="checkpoint_2" parent="world/checkpoints" instance=ExtResource( 5 )]
+
+position = Vector2( 2368, -512 )
+
+[node name="pickups" type="Node" parent="world"]
+
+[node name="pickup_health" type="Node" parent="world/pickups"]
+
+[node name="pickup_health_1" parent="world/pickups/pickup_health" instance=ExtResource( 6 )]
+
+position = Vector2( 2368, -896 )
+
+[node name="pickup_health_2" parent="world/pickups/pickup_health" instance=ExtResource( 6 )]
+
+position = Vector2( -416, -832 )
+
+[node name="pickup_score" type="Node" parent="world/pickups"]
+
+[node name="pickup_score_1" parent="world/pickups/pickup_score" instance=ExtResource( 7 )]
+
+position = Vector2( 1440, 192 )
+
+[node name="pickup_score_2" parent="world/pickups/pickup_score" instance=ExtResource( 7 )]
+
+position = Vector2( 1536, 192 )
+
+[node name="pickup_score_3" parent="world/pickups/pickup_score" instance=ExtResource( 7 )]
+
+position = Vector2( 1632, 192 )
+
+[node name="pickup_score_4" parent="world/pickups/pickup_score" instance=ExtResource( 7 )]
+
+position = Vector2( 1728, 192 )
+
+[node name="pickup_score_5" parent="world/pickups/pickup_score" instance=ExtResource( 7 )]
+
+position = Vector2( 1824, 192 )
+
+[node name="pickup_score_6" parent="world/pickups/pickup_score" instance=ExtResource( 7 )]
+
+position = Vector2( 1920, 192 )
+
+[node name="pickup_score_7" parent="world/pickups/pickup_score" instance=ExtResource( 7 )]
+
+position = Vector2( 640, -1088 )
+
+[node name="pickup_score_8" parent="world/pickups/pickup_score" instance=ExtResource( 7 )]
+
+position = Vector2( 1376, -1344 )
+
+[node name="pickup_score_9" parent="world/pickups/pickup_score" instance=ExtResource( 7 )]
+
+position = Vector2( 2112, -1600 )
+
+[node name="level_exit" parent="world" instance=ExtResource( 8 )]
+
+position = Vector2( 2720, -800 )
+scale = Vector2( 5, 1 )
+level = 0
+
+

@@ -1,7 +1,6 @@
 extends CanvasLayer
 
 const MAIN_MENU = "res://scenes/main_menu.tscn"
-const LEVEL_1   = "res://scenes/main.tscn"
 
 var is_changing = false
 
