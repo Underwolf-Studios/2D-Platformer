@@ -17,6 +17,7 @@ config/icon="res://icon.png"
 [autoload]
 
 global="*res://scripts/global.gd"
+scene_manager="*res://scenes/scene_manager.tscn"
 
 [gdnative]
 
