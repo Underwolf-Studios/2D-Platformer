@@ -62,7 +62,7 @@ mouse_filter = 1
 size_flags_horizontal = 1
 size_flags_vertical = 1
 texture = ExtResource( 2 )
-_sections_unfolded = [ "Visibility" ]
+stretch_mode = 0
 
 [node name="anim" type="AnimationPlayer" parent="."]
 
@@ -75,5 +75,6 @@ playback/active = true
 playback/speed = 1.0
 blend_times = [  ]
 autoplay = ""
+_sections_unfolded = [ "Playback Options", "playback" ]
 
 

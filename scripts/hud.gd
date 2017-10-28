@@ -59,8 +59,8 @@ func _on_btn_restart_pressed():
 	global.health = global.MAX_HEALTH
 
 func _on_btn_menu_pressed():
-	pass
-	# Load Menu Scene
+	get_tree().set_pause(false)
+	scene_manager.change_scene(scene_manager.MAIN_MENU)
 
 func _on_btn_quit_pressed():
 	get_tree().quit()
