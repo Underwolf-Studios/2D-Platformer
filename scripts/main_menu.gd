@@ -5,13 +5,20 @@ func _on_btn_resume_pressed():
 
 func _on_btn_new_game_pressed():
 	scene_manager.change_scene(scene_manager.LEVEL_1)
-	print("INFO: New Game")
 
 func _on_btn_levels_pressed():
-	print("INFO: Open Levels")
+	$levels_menu.show()
 
 func _on_btn_settings_pressed():
-	print("INFO: Open Settings")
+	$settings_menu.show()
 
 func _on_btn_quit_pressed():
 	get_tree().quit()
+
+func _on_btn_back_pressed():
+	if $settings_menu.is_visible() == true:
+		$settings_menu.hide()
+	elif $levels_menu.is_visible() == true:
+		$levels_menu.hide()
+	else:
+		return
