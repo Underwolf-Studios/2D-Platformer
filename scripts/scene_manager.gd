@@ -5,6 +5,10 @@ const LEVEL_1   = "res://scenes/main.tscn"
 
 var is_changing = false
 
+func _process(delta):
+	if Input.is_action_pressed("debug"):
+		change_scene("test")
+
 func change_scene(scene_path):
 	if is_changing:
 		return
