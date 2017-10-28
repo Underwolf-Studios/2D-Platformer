@@ -1,9 +1,19 @@
 extends CanvasLayer
 
+var game_paused = false
+
 func _ready():
 	global.connect("health_changed", self, "_on_global_health_changed")
 	global.connect("score_changed", self, "_on_global_score_changed")
 	print("DEBUG: HUD loaded")
+
+func _input(event):
+	if event.is_action_pressed("pause"):
+		game_paused = not game_paused
+		get_tree().set_pause(game_paused)
+		$pause_menu.set_visible(game_paused)
+		$health.set_visible(not game_paused)
+		$score.set_visible(not game_paused)
 
 func _on_global_health_changed(health):
 	if health == 3:
@@ -27,3 +37,16 @@ func _on_global_health_changed(health):
 
 func _on_global_score_changed(score):
 	$"score/lbl_score".text = str(score)
+
+func _on_btn_resume_pressed():
+	get_tree().set_pause(false)
+	$pause_menu.hide()
+	$health.show()
+	$score.show()
+
+func _on_btn_menu_pressed():
+	pass
+	# Load Menu Scene
+
+func _on_btn_quit_pressed():
+	get_tree().quit()
