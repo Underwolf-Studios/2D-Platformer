@@ -1,1 +1,1 @@
-{"/root/global":{"data":{"score":10}, "levels":{"level_1":{"name":"level_1", "path":"res://scenes/levels/level_1.tscn", "locked":false}, "level_2":{"name":"level_2", "path":"res://scenes/levels/level_2.tscn", "locked":true}}}}
+{"/root/global":{"data":{"score":20}, "levels":{"level_1":{"name":"level_1", "path":"res://scenes/levels/level_1.tscn", "locked":false}, "level_2":{"name":"level_2", "path":"res://scenes/levels/level_2.tscn", "locked":true}}}}

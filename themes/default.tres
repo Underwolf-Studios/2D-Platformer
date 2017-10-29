@@ -566,5 +566,5 @@ VSlider/styles/grabber_area = SubResource( 5 )
 VSlider/styles/grabber_disabled = null
 VSlider/styles/grabber_highlight = null
 VSlider/styles/slider = SubResource( 8 )
-_sections_unfolded = [ "Button/styles", "CheckBox/fonts", "CheckBox/styles", "CheckButton/icons", "CheckButton/styles", "HScrollBar/styles", "HSlider/icons", "HSlider/styles", "Icons", "Icons/icons", "ItemList", "ItemList/styles", "Margin", "OptionButton/constants", "OptionButton/styles", "Panel/styles", "ProgressBar/fonts", "ProgressBar/styles", "TabContainer/styles", "TextEdit/constants", "TextEdit/fonts", "TextEdit/styles", "Tree", "Tree/constants", "Tree/icons", "Tree/styles", "VScrollBar/styles", "VSlider/icons", "VSlider/styles", "WindowDialog" ]
+_sections_unfolded = [ "Button/styles", "CheckBox/fonts", "CheckBox/styles", "CheckButton/icons", "CheckButton/styles", "HScrollBar/styles", "HSlider/icons", "HSlider/styles", "Icons", "Icons/icons", "ItemList", "ItemList/styles", "Margin", "OptionButton/constants", "OptionButton/styles", "Panel/styles", "ProgressBar/fonts", "ProgressBar/styles", "TabContainer/styles", "TextEdit/constants", "TextEdit/fonts", "TextEdit/styles", "Tree/constants", "Tree/icons", "Tree/styles", "VScrollBar/styles", "VSlider/icons", "VSlider/styles", "WindowDialog" ]
 
