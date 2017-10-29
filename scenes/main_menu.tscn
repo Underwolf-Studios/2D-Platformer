@@ -21,7 +21,7 @@ use_filter = false
 font_data = ExtResource( 3 )
 _sections_unfolded = [ "Font", "Settings" ]
 
-[sub_resource type="DynamicFont" id=4]
+[sub_resource type="DynamicFont" id=3]
 
 size = 50
 use_mipmaps = false
@@ -30,7 +30,7 @@ extra_spacing_bottom = -16
 font_data = ExtResource( 3 )
 _sections_unfolded = [ "Extra Spacing", "Font", "Settings" ]
 
-[sub_resource type="DynamicFont" id=5]
+[sub_resource type="DynamicFont" id=4]
 
 size = 50
 use_mipmaps = false
@@ -315,7 +315,7 @@ rect_clip_content = false
 mouse_filter = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 3 )
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
@@ -339,7 +339,7 @@ rect_clip_content = false
 mouse_filter = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-custom_fonts/font = SubResource( 5 )
+custom_fonts/font = SubResource( 4 )
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
@@ -433,6 +433,7 @@ size_flags_vertical = 1
 
 [node name="AUDIO" type="Tabs" parent="settings_menu/tab_container"]
 
+visible = false
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 1.0
@@ -449,6 +450,7 @@ size_flags_vertical = 1
 
 [node name="INPUT" type="Tabs" parent="settings_menu/tab_container"]
 
+visible = false
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 1.0
