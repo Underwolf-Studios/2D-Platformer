@@ -1,20 +1,21 @@
 [gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://scripts/hud.gd" type="Script" id=1]
-[ext_resource path="res://sprites/circle_red.png" type="Texture" id=2]
-[ext_resource path="res://sprites/circle_yellow.png" type="Texture" id=3]
+[ext_resource path="res://sprites/square_red.png" type="Texture" id=2]
+[ext_resource path="res://sprites/square_yellow.png" type="Texture" id=3]
 [ext_resource path="res://fonts/pixel.ttf" type="DynamicFontData" id=4]
 [ext_resource path="res://themes/default.tres" type="Theme" id=5]
 [ext_resource path="res://fonts/button_big.tres" type="DynamicFont" id=6]
 
 [sub_resource type="DynamicFont" id=1]
 
+resource_name = "Pixel Font"
 size = 24
 use_mipmaps = false
 use_filter = false
-extra_spacing_top = 12
+extra_spacing_top = 7
 font_data = ExtResource( 4 )
-_sections_unfolded = [ "Extra Spacing", "Font", "Settings" ]
+_sections_unfolded = [ "Extra Spacing", "Font", "Resource", "Settings" ]
 
 [sub_resource type="DynamicFont" id=2]
 
@@ -27,7 +28,6 @@ _sections_unfolded = [ "Font", "Settings" ]
 [node name="hud" type="CanvasLayer"]
 
 pause_mode = 2
-editor/display_folded = true
 layer = 1
 offset = Vector2( 0, 0 )
 rotation = 0.0
@@ -58,8 +58,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_right = 40.0
-margin_bottom = 40.0
+margin_left = 22.0
+margin_right = 86.0
+margin_bottom = 64.0
+rect_rotation = 45.0
 rect_scale = Vector2( 0.5, 0.5 )
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
@@ -76,9 +78,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 40.0
-margin_right = 104.0
+margin_left = 70.0
+margin_right = 134.0
 margin_bottom = 64.0
+rect_rotation = 45.0
 rect_scale = Vector2( 0.5, 0.5 )
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
@@ -95,9 +98,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 80.0
-margin_right = 144.0
+margin_left = 118.0
+margin_right = 182.0
 margin_bottom = 64.0
+rect_rotation = 45.0
 rect_scale = Vector2( 0.5, 0.5 )
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
@@ -132,9 +136,11 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
+margin_left = 22.0
 margin_top = 48.0
-margin_right = 64.0
+margin_right = 86.0
 margin_bottom = 112.0
+rect_rotation = 45.0
 rect_scale = Vector2( 0.5, 0.5 )
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
@@ -151,10 +157,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 40.0
-margin_top = 44.0
-margin_right = 112.0
-margin_bottom = 80.0
+margin_left = 54.0
+margin_top = 54.0
+margin_right = 134.0
+margin_bottom = 86.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2

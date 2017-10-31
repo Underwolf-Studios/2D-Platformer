@@ -1,6 +1,6 @@
 extends Area2D
 
-onready var spr_active = load("res://sprites/circle_orange.png")
+onready var spr_active = load("res://sprites/square_orange.png")
 
 var checkpoint_active = false
 
