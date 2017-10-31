@@ -1,24 +1,46 @@
-[gd_resource type="Theme" load_steps=39 format=2]
+[gd_resource type="Theme" load_steps=41 format=2]
 
-[ext_resource path="res://sprites/ui/button_hover.png" type="Texture" id=1]
-[ext_resource path="res://sprites/ui/button_normal.png" type="Texture" id=2]
-[ext_resource path="res://sprites/ui/button_pressed.png" type="Texture" id=3]
-[ext_resource path="res://sprites/ui/checkbox_checked.png" type="Texture" id=4]
-[ext_resource path="res://sprites/ui/checkbox_unchecked.png" type="Texture" id=5]
-[ext_resource path="res://sprites/ui/checkbutton_off.png" type="Texture" id=6]
-[ext_resource path="res://sprites/ui/checkbutton_on.png" type="Texture" id=7]
-[ext_resource path="res://sprites/ui/scrollbar_fg.png" type="Texture" id=8]
-[ext_resource path="res://sprites/ui/scrollbar_bg.png" type="Texture" id=9]
-[ext_resource path="res://sprites/ui/h_slider_grabber.png" type="Texture" id=10]
-[ext_resource path="res://sprites/ui/slider.png" type="Texture" id=11]
-[ext_resource path="res://sprites/ui/panel.png" type="Texture" id=12]
-[ext_resource path="res://sprites/ui/arrow_down.png" type="Texture" id=13]
-[ext_resource path="res://fonts/pixel.ttf" type="DynamicFontData" id=14]
-[ext_resource path="res://sprites/ui/progressbar_bg.png" type="Texture" id=15]
-[ext_resource path="res://sprites/ui/progressbar_fg.png" type="Texture" id=16]
-[ext_resource path="res://sprites/ui/tab_bg.png" type="Texture" id=17]
-[ext_resource path="res://sprites/ui/tab_fg.png" type="Texture" id=18]
-[ext_resource path="res://sprites/ui/v_slider_grabber.png" type="Texture" id=19]
+[ext_resource path="res://sprites/ui/button_disabled.png" type="Texture" id=1]
+[ext_resource path="res://sprites/ui/button_hover.png" type="Texture" id=2]
+[ext_resource path="res://sprites/ui/button_normal.png" type="Texture" id=3]
+[ext_resource path="res://sprites/ui/button_pressed.png" type="Texture" id=4]
+[ext_resource path="res://sprites/ui/checkbox_checked.png" type="Texture" id=5]
+[ext_resource path="res://sprites/ui/checkbox_unchecked.png" type="Texture" id=6]
+[ext_resource path="res://sprites/ui/checkbutton_off.png" type="Texture" id=7]
+[ext_resource path="res://sprites/ui/checkbutton_on.png" type="Texture" id=8]
+[ext_resource path="res://sprites/ui/scrollbar_fg.png" type="Texture" id=9]
+[ext_resource path="res://sprites/ui/scrollbar_bg.png" type="Texture" id=10]
+[ext_resource path="res://sprites/ui/h_slider_grabber.png" type="Texture" id=11]
+[ext_resource path="res://sprites/ui/slider.png" type="Texture" id=12]
+[ext_resource path="res://sprites/ui/panel.png" type="Texture" id=13]
+[ext_resource path="res://sprites/ui/arrow_down.png" type="Texture" id=14]
+[ext_resource path="res://fonts/pixel.ttf" type="DynamicFontData" id=15]
+[ext_resource path="res://sprites/ui/progressbar_bg.png" type="Texture" id=16]
+[ext_resource path="res://sprites/ui/progressbar_fg.png" type="Texture" id=17]
+[ext_resource path="res://sprites/ui/tab_bg.png" type="Texture" id=18]
+[ext_resource path="res://sprites/ui/tab_fg.png" type="Texture" id=19]
+[ext_resource path="res://sprites/ui/v_slider_grabber.png" type="Texture" id=20]
+
+[sub_resource type="StyleBoxTexture" id=20]
+
+resource_name = "Button Disabled"
+content_margin_left = -1.0
+content_margin_right = -1.0
+content_margin_top = -1.0
+content_margin_bottom = -1.0
+texture = ExtResource( 1 )
+region_rect = Rect2( 0, 0, 64, 64 )
+margin_left = 6.0
+margin_right = 6.0
+margin_top = 6.0
+margin_bottom = 6.0
+expand_margin_left = 0.0
+expand_margin_right = 0.0
+expand_margin_top = 0.0
+expand_margin_bottom = 0.0
+modulate_color = Color( 1, 1, 1, 1 )
+draw_center = true
+_sections_unfolded = [ "Resource" ]
 
 [sub_resource type="StyleBoxTexture" id=1]
 
@@ -27,7 +49,7 @@ content_margin_left = -1.0
 content_margin_right = -1.0
 content_margin_top = -1.0
 content_margin_bottom = -1.0
-texture = ExtResource( 1 )
+texture = ExtResource( 2 )
 region_rect = Rect2( 0, 0, 64, 64 )
 margin_left = 6.0
 margin_right = 6.0
@@ -48,7 +70,7 @@ content_margin_left = 10.0
 content_margin_right = 10.0
 content_margin_top = 10.0
 content_margin_bottom = 10.0
-texture = ExtResource( 2 )
+texture = ExtResource( 3 )
 region_rect = Rect2( 0, 0, 64, 64 )
 margin_left = 6.0
 margin_right = 6.0
@@ -69,7 +91,7 @@ content_margin_left = -1.0
 content_margin_right = -1.0
 content_margin_top = -1.0
 content_margin_bottom = -1.0
-texture = ExtResource( 3 )
+texture = ExtResource( 4 )
 region_rect = Rect2( 0, 0, 64, 64 )
 margin_left = 6.0
 margin_right = 6.0
@@ -108,7 +130,7 @@ content_margin_left = -1.0
 content_margin_right = -1.0
 content_margin_top = -1.0
 content_margin_bottom = -1.0
-texture = ExtResource( 8 )
+texture = ExtResource( 9 )
 region_rect = Rect2( 0, 0, 6, 6 )
 margin_left = 0.0
 margin_right = 0.0
@@ -129,7 +151,7 @@ content_margin_left = 6.0
 content_margin_right = -1.0
 content_margin_top = -1.0
 content_margin_bottom = -1.0
-texture = ExtResource( 9 )
+texture = ExtResource( 10 )
 region_rect = Rect2( 0, 0, 6, 6 )
 margin_left = 0.0
 margin_right = 0.0
@@ -150,7 +172,7 @@ content_margin_left = -1.0
 content_margin_right = -1.0
 content_margin_top = -1.0
 content_margin_bottom = -1.0
-texture = ExtResource( 11 )
+texture = ExtResource( 12 )
 region_rect = Rect2( 0, 0, 24, 24 )
 margin_left = 0.0
 margin_right = 0.0
@@ -171,7 +193,7 @@ content_margin_left = 10.0
 content_margin_right = 10.0
 content_margin_top = 10.0
 content_margin_bottom = 10.0
-texture = ExtResource( 12 )
+texture = ExtResource( 13 )
 region_rect = Rect2( 0, 0, 64, 64 )
 margin_left = 6.0
 margin_right = 6.0
@@ -192,7 +214,7 @@ content_margin_left = -1.0
 content_margin_right = -1.0
 content_margin_top = -1.0
 content_margin_bottom = -1.0
-texture = ExtResource( 12 )
+texture = ExtResource( 13 )
 region_rect = Rect2( 0, 0, 64, 64 )
 margin_left = 6.0
 margin_right = 6.0
@@ -213,7 +235,7 @@ size = 16
 use_mipmaps = false
 use_filter = false
 extra_spacing_top = 4
-font_data = ExtResource( 14 )
+font_data = ExtResource( 15 )
 _sections_unfolded = [ "Extra Spacing", "Font", "Resource" ]
 
 [sub_resource type="StyleBoxTexture" id=12]
@@ -223,7 +245,7 @@ content_margin_left = -1.0
 content_margin_right = -1.0
 content_margin_top = -1.0
 content_margin_bottom = -1.0
-texture = ExtResource( 15 )
+texture = ExtResource( 16 )
 region_rect = Rect2( 0, 0, 24, 24 )
 margin_left = 6.0
 margin_right = 6.0
@@ -244,7 +266,7 @@ content_margin_left = -1.0
 content_margin_right = -1.0
 content_margin_top = -1.0
 content_margin_bottom = -1.0
-texture = ExtResource( 16 )
+texture = ExtResource( 17 )
 region_rect = Rect2( 0, 0, 24, 24 )
 margin_left = 6.0
 margin_right = 6.0
@@ -265,7 +287,7 @@ content_margin_left = -1.0
 content_margin_right = -1.0
 content_margin_top = -1.0
 content_margin_bottom = -1.0
-texture = ExtResource( 12 )
+texture = ExtResource( 13 )
 region_rect = Rect2( 0, 0, 64, 64 )
 margin_left = 6.0
 margin_right = 6.0
@@ -286,7 +308,7 @@ content_margin_left = 20.0
 content_margin_right = 20.0
 content_margin_top = 20.0
 content_margin_bottom = 10.0
-texture = ExtResource( 17 )
+texture = ExtResource( 18 )
 region_rect = Rect2( 0, 0, 64, 64 )
 margin_left = 6.0
 margin_right = 6.0
@@ -307,7 +329,7 @@ content_margin_left = 20.0
 content_margin_right = 20.0
 content_margin_top = 20.0
 content_margin_bottom = 10.0
-texture = ExtResource( 18 )
+texture = ExtResource( 19 )
 region_rect = Rect2( 0, 0, 64, 64 )
 margin_left = 6.0
 margin_right = 6.0
@@ -327,7 +349,7 @@ content_margin_left = 10.0
 content_margin_right = 10.0
 content_margin_top = -1.0
 content_margin_bottom = 10.0
-texture = ExtResource( 12 )
+texture = ExtResource( 13 )
 region_rect = Rect2( 0, 0, 64, 64 )
 margin_left = 6.0
 margin_right = 6.0
@@ -348,7 +370,7 @@ content_margin_left = -1.0
 content_margin_right = -1.0
 content_margin_top = -1.0
 content_margin_bottom = -1.0
-texture = ExtResource( 12 )
+texture = ExtResource( 13 )
 region_rect = Rect2( 0, 0, 64, 64 )
 margin_left = 6.0
 margin_right = 6.0
@@ -367,7 +389,7 @@ _sections_unfolded = [ "Margin", "Resource" ]
 size = 16
 use_mipmaps = false
 use_filter = false
-font_data = ExtResource( 14 )
+font_data = ExtResource( 15 )
 _sections_unfolded = [ "Font", "Resource" ]
 
 [resource]
@@ -379,7 +401,7 @@ Button/colors/font_color_hover = Color( 0.941176, 0.941176, 0.941176, 1 )
 Button/colors/font_color_pressed = Color( 1, 1, 1, 1 )
 Button/constants/hseparation = 2
 Button/fonts/font = null
-Button/styles/disabled = null
+Button/styles/disabled = SubResource( 20 )
 Button/styles/focus = null
 Button/styles/hover = SubResource( 1 )
 Button/styles/normal = SubResource( 2 )
@@ -391,10 +413,10 @@ CheckBox/colors/font_color_pressed = Color( 1, 1, 1, 1 )
 CheckBox/constants/check_vadjust = 0
 CheckBox/constants/hseparation = 4
 CheckBox/fonts/font = null
-CheckBox/icons/checked = ExtResource( 4 )
+CheckBox/icons/checked = ExtResource( 5 )
 CheckBox/icons/radio_checked = null
 CheckBox/icons/radio_unchecked = null
-CheckBox/icons/unchecked = ExtResource( 5 )
+CheckBox/icons/unchecked = ExtResource( 6 )
 CheckBox/styles/disabled = SubResource( 4 )
 CheckBox/styles/focus = SubResource( 4 )
 CheckBox/styles/hover = SubResource( 4 )
@@ -407,8 +429,8 @@ CheckButton/colors/font_color_pressed = Color( 1, 1, 1, 1 )
 CheckButton/constants/check_vadjust = 0
 CheckButton/constants/hseparation = 4
 CheckButton/fonts/font = null
-CheckButton/icons/off = ExtResource( 6 )
-CheckButton/icons/on = ExtResource( 7 )
+CheckButton/icons/off = ExtResource( 7 )
+CheckButton/icons/on = ExtResource( 8 )
 CheckButton/styles/disabled = SubResource( 5 )
 CheckButton/styles/focus = SubResource( 5 )
 CheckButton/styles/hover = SubResource( 5 )
@@ -423,9 +445,9 @@ HScrollBar/styles/grabber_highlight = SubResource( 6 )
 HScrollBar/styles/grabber_pressed = SubResource( 6 )
 HScrollBar/styles/scroll = SubResource( 7 )
 HScrollBar/styles/scroll_focus = SubResource( 7 )
-HSlider/icons/grabber = ExtResource( 10 )
+HSlider/icons/grabber = ExtResource( 11 )
 HSlider/icons/grabber_disabled = null
-HSlider/icons/grabber_highlight = ExtResource( 10 )
+HSlider/icons/grabber_highlight = ExtResource( 11 )
 HSlider/icons/tick = null
 HSlider/styles/focus = null
 HSlider/styles/grabber_area = SubResource( 5 )
@@ -448,7 +470,7 @@ OptionButton/colors/font_color_pressed = Color( 1, 1, 1, 1 )
 OptionButton/constants/arrow_margin = 10
 OptionButton/constants/hseparation = 2
 OptionButton/fonts/font = null
-OptionButton/icons/arrow = ExtResource( 13 )
+OptionButton/icons/arrow = ExtResource( 14 )
 OptionButton/styles/disabled = null
 OptionButton/styles/focus = null
 OptionButton/styles/hover = null
@@ -531,9 +553,9 @@ Tree/fonts/font = null
 Tree/fonts/title_button_font = null
 Tree/icons/arrow = null
 Tree/icons/arrow_collapsed = null
-Tree/icons/checked = ExtResource( 4 )
+Tree/icons/checked = ExtResource( 5 )
 Tree/icons/select_arrow = null
-Tree/icons/unchecked = ExtResource( 5 )
+Tree/icons/unchecked = ExtResource( 6 )
 Tree/icons/updown = null
 Tree/styles/bg = SubResource( 18 )
 Tree/styles/bg_focus = null
@@ -557,14 +579,14 @@ VScrollBar/styles/grabber_highlight = SubResource( 6 )
 VScrollBar/styles/grabber_pressed = SubResource( 6 )
 VScrollBar/styles/scroll = SubResource( 7 )
 VScrollBar/styles/scroll_focus = SubResource( 7 )
-VSlider/icons/grabber = ExtResource( 19 )
+VSlider/icons/grabber = ExtResource( 20 )
 VSlider/icons/grabber_disabled = null
-VSlider/icons/grabber_highlight = ExtResource( 19 )
+VSlider/icons/grabber_highlight = ExtResource( 20 )
 VSlider/icons/tick = null
 VSlider/styles/focus = null
 VSlider/styles/grabber_area = SubResource( 5 )
 VSlider/styles/grabber_disabled = null
 VSlider/styles/grabber_highlight = null
 VSlider/styles/slider = SubResource( 8 )
-_sections_unfolded = [ "Button/styles", "CheckBox/fonts", "CheckBox/styles", "CheckButton/icons", "CheckButton/styles", "HScrollBar/styles", "HSlider/icons", "HSlider/styles", "Icons", "Icons/icons", "ItemList", "ItemList/styles", "Margin", "OptionButton/constants", "OptionButton/styles", "Panel/styles", "ProgressBar/fonts", "ProgressBar/styles", "TabContainer/styles", "TextEdit/constants", "TextEdit/fonts", "TextEdit/styles", "Tree/constants", "Tree/icons", "Tree/styles", "VScrollBar/styles", "VSlider/icons", "VSlider/styles", "WindowDialog" ]
+_sections_unfolded = [ "Button", "Button/styles", "CheckBox/fonts", "CheckBox/styles", "CheckButton/icons", "CheckButton/styles", "HScrollBar/styles", "HSlider/icons", "HSlider/styles", "Icons", "Icons/icons", "ItemList", "ItemList/styles", "Margin", "OptionButton/constants", "OptionButton/styles", "Panel/styles", "ProgressBar/fonts", "ProgressBar/styles", "TabContainer/styles", "TextEdit/constants", "TextEdit/fonts", "TextEdit/styles", "Tree/constants", "Tree/icons", "Tree/styles", "VScrollBar/styles", "VSlider/icons", "VSlider/styles", "WindowDialog" ]
 
