@@ -16,12 +16,10 @@ var current_level  = null
 
 var levels = {
 	"level_1": {
-		"name": "level_1",
 		"path": "res://scenes/levels/level_1.tscn",
 		"locked": false
 	},
 	"level_2": {
-		"name": "level_2",
 		"path": "res://scenes/levels/level_2.tscn",
 		"locked": true
 	}
@@ -112,3 +110,9 @@ func load_state(data):
 			score = (data['data']['score'])
 		else:
 			set(attribute, data[attribute])
+
+func get_level_data(category, key):
+	return levels[category][key]
+
+func set_level_data(category, key, value):
+	levels[category][key] = value

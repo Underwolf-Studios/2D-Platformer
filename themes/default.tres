@@ -21,7 +21,7 @@
 [ext_resource path="res://sprites/ui/tab_fg.png" type="Texture" id=19]
 [ext_resource path="res://sprites/ui/v_slider_grabber.png" type="Texture" id=20]
 
-[sub_resource type="StyleBoxTexture" id=20]
+[sub_resource type="StyleBoxTexture" id=1]
 
 resource_name = "Button Disabled"
 content_margin_left = -1.0
@@ -42,9 +42,8 @@ modulate_color = Color( 1, 1, 1, 1 )
 draw_center = true
 _sections_unfolded = [ "Resource" ]
 
-[sub_resource type="StyleBoxTexture" id=1]
+[sub_resource type="StyleBoxTexture" id=2]
 
-resource_name = "Button Hover"
 content_margin_left = -1.0
 content_margin_right = -1.0
 content_margin_top = -1.0
@@ -63,9 +62,8 @@ modulate_color = Color( 1, 1, 1, 1 )
 draw_center = true
 _sections_unfolded = [ "Margin", "Resource" ]
 
-[sub_resource type="StyleBoxTexture" id=2]
+[sub_resource type="StyleBoxTexture" id=3]
 
-resource_name = "Button Normal"
 content_margin_left = 10.0
 content_margin_right = 10.0
 content_margin_top = 10.0
@@ -84,9 +82,8 @@ modulate_color = Color( 1, 1, 1, 1 )
 draw_center = true
 _sections_unfolded = [ "Content Margin", "Expand Margin", "Margin", "Resource" ]
 
-[sub_resource type="StyleBoxTexture" id=3]
+[sub_resource type="StyleBoxTexture" id=4]
 
-resource_name = "Button Pressed"
 content_margin_left = -1.0
 content_margin_right = -1.0
 content_margin_top = -1.0
@@ -105,27 +102,24 @@ modulate_color = Color( 1, 1, 1, 1 )
 draw_center = true
 _sections_unfolded = [ "Margin", "Resource" ]
 
-[sub_resource type="StyleBoxEmpty" id=4]
+[sub_resource type="StyleBoxEmpty" id=5]
 
-resource_name = "CheckBox Text"
 content_margin_left = 32.0
 content_margin_right = -1.0
 content_margin_top = 5.0
 content_margin_bottom = -1.0
 _sections_unfolded = [ "Content Margin", "Resource" ]
 
-[sub_resource type="StyleBoxEmpty" id=5]
+[sub_resource type="StyleBoxEmpty" id=6]
 
-resource_name = "Empty"
 content_margin_left = -1.0
 content_margin_right = -1.0
 content_margin_top = -1.0
 content_margin_bottom = -1.0
 _sections_unfolded = [ "Resource" ]
 
-[sub_resource type="StyleBoxTexture" id=6]
+[sub_resource type="StyleBoxTexture" id=7]
 
-resource_name = "ScrollBar Grabber"
 content_margin_left = -1.0
 content_margin_right = -1.0
 content_margin_top = -1.0
@@ -144,9 +138,8 @@ modulate_color = Color( 1, 1, 1, 1 )
 draw_center = true
 _sections_unfolded = [ "Resource" ]
 
-[sub_resource type="StyleBoxTexture" id=7]
+[sub_resource type="StyleBoxTexture" id=8]
 
-resource_name = "ScrollBarg Scroll"
 content_margin_left = 6.0
 content_margin_right = -1.0
 content_margin_top = -1.0
@@ -165,9 +158,8 @@ modulate_color = Color( 1, 1, 1, 1 )
 draw_center = true
 _sections_unfolded = [ "Content Margin", "Resource" ]
 
-[sub_resource type="StyleBoxTexture" id=8]
+[sub_resource type="StyleBoxTexture" id=9]
 
-resource_name = "Slider"
 content_margin_left = -1.0
 content_margin_right = -1.0
 content_margin_top = -1.0
@@ -186,9 +178,8 @@ modulate_color = Color( 1, 1, 1, 1 )
 draw_center = true
 _sections_unfolded = [ "Resource" ]
 
-[sub_resource type="StyleBoxTexture" id=9]
+[sub_resource type="StyleBoxTexture" id=10]
 
-resource_name = "LineEdit Normal"
 content_margin_left = 10.0
 content_margin_right = 10.0
 content_margin_top = 10.0
@@ -207,9 +198,8 @@ modulate_color = Color( 1, 1, 1, 1 )
 draw_center = true
 _sections_unfolded = [ "Content Margin", "Margin", "Resource" ]
 
-[sub_resource type="StyleBoxTexture" id=10]
+[sub_resource type="StyleBoxTexture" id=11]
 
-resource_name = "Panel Background"
 content_margin_left = -1.0
 content_margin_right = -1.0
 content_margin_top = -1.0
@@ -228,9 +218,8 @@ modulate_color = Color( 1, 1, 1, 1 )
 draw_center = true
 _sections_unfolded = [ "Margin", "Resource" ]
 
-[sub_resource type="DynamicFont" id=11]
+[sub_resource type="DynamicFont" id=12]
 
-resource_name = "Pixel Font"
 size = 16
 use_mipmaps = false
 use_filter = false
@@ -238,9 +227,8 @@ extra_spacing_top = 4
 font_data = ExtResource( 15 )
 _sections_unfolded = [ "Extra Spacing", "Font", "Resource" ]
 
-[sub_resource type="StyleBoxTexture" id=12]
+[sub_resource type="StyleBoxTexture" id=13]
 
-resource_name = "Progressbar Background"
 content_margin_left = -1.0
 content_margin_right = -1.0
 content_margin_top = -1.0
@@ -259,9 +247,8 @@ modulate_color = Color( 1, 1, 1, 1 )
 draw_center = true
 _sections_unfolded = [ "Margin", "Resource" ]
 
-[sub_resource type="StyleBoxTexture" id=13]
+[sub_resource type="StyleBoxTexture" id=14]
 
-resource_name = "Progressbar Foreground"
 content_margin_left = -1.0
 content_margin_right = -1.0
 content_margin_top = -1.0
@@ -280,9 +267,8 @@ modulate_color = Color( 1, 1, 1, 1 )
 draw_center = true
 _sections_unfolded = [ "Margin", "Resource" ]
 
-[sub_resource type="StyleBoxTexture" id=14]
+[sub_resource type="StyleBoxTexture" id=15]
 
-resource_name = "TabContainer Background"
 content_margin_left = -1.0
 content_margin_right = -1.0
 content_margin_top = -1.0
@@ -301,9 +287,8 @@ modulate_color = Color( 1, 1, 1, 1 )
 draw_center = true
 _sections_unfolded = [ "Content Margin", "Expand Margin", "Margin", "Resource" ]
 
-[sub_resource type="StyleBoxTexture" id=15]
+[sub_resource type="StyleBoxTexture" id=16]
 
-resource_name = "Tab Background"
 content_margin_left = 20.0
 content_margin_right = 20.0
 content_margin_top = 20.0
@@ -322,9 +307,8 @@ modulate_color = Color( 1, 1, 1, 1 )
 draw_center = true
 _sections_unfolded = [ "Content Margin", "Expand Margin", "Margin" ]
 
-[sub_resource type="StyleBoxTexture" id=16]
+[sub_resource type="StyleBoxTexture" id=17]
 
-resource_name = "Tab Foreground"
 content_margin_left = 20.0
 content_margin_right = 20.0
 content_margin_top = 20.0
@@ -343,7 +327,7 @@ modulate_color = Color( 1, 1, 1, 1 )
 draw_center = true
 _sections_unfolded = [ "Content Margin", "Expand Margin", "Margin", "Resource" ]
 
-[sub_resource type="StyleBoxTexture" id=17]
+[sub_resource type="StyleBoxTexture" id=18]
 
 content_margin_left = 10.0
 content_margin_right = 10.0
@@ -363,9 +347,8 @@ modulate_color = Color( 1, 1, 1, 1 )
 draw_center = true
 _sections_unfolded = [ "Content Margin", "Resource" ]
 
-[sub_resource type="StyleBoxTexture" id=18]
+[sub_resource type="StyleBoxTexture" id=19]
 
-resource_name = "Tree  Background"
 content_margin_left = -1.0
 content_margin_right = -1.0
 content_margin_top = -1.0
@@ -384,7 +367,7 @@ modulate_color = Color( 1, 1, 1, 1 )
 draw_center = true
 _sections_unfolded = [ "Margin", "Resource" ]
 
-[sub_resource type="DynamicFont" id=19]
+[sub_resource type="DynamicFont" id=20]
 
 size = 16
 use_mipmaps = false
@@ -394,18 +377,18 @@ _sections_unfolded = [ "Font", "Resource" ]
 
 [resource]
 
-default_font = SubResource( 19 )
+default_font = SubResource( 20 )
 Button/colors/font_color = Color( 0.878431, 0.878431, 0.878431, 1 )
 Button/colors/font_color_disabled = Color( 0.9, 0.9, 0.9, 0.2 )
 Button/colors/font_color_hover = Color( 0.941176, 0.941176, 0.941176, 1 )
 Button/colors/font_color_pressed = Color( 1, 1, 1, 1 )
 Button/constants/hseparation = 2
 Button/fonts/font = null
-Button/styles/disabled = SubResource( 20 )
+Button/styles/disabled = SubResource( 1 )
 Button/styles/focus = null
-Button/styles/hover = SubResource( 1 )
-Button/styles/normal = SubResource( 2 )
-Button/styles/pressed = SubResource( 3 )
+Button/styles/hover = SubResource( 2 )
+Button/styles/normal = SubResource( 3 )
+Button/styles/pressed = SubResource( 4 )
 CheckBox/colors/font_color = Color( 0.878431, 0.878431, 0.878431, 1 )
 CheckBox/colors/font_color_disabled = Color( 0.9, 0.9, 0.9, 0.2 )
 CheckBox/colors/font_color_hover = Color( 0.941176, 0.941176, 0.941176, 1 )
@@ -417,11 +400,11 @@ CheckBox/icons/checked = ExtResource( 5 )
 CheckBox/icons/radio_checked = null
 CheckBox/icons/radio_unchecked = null
 CheckBox/icons/unchecked = ExtResource( 6 )
-CheckBox/styles/disabled = SubResource( 4 )
-CheckBox/styles/focus = SubResource( 4 )
-CheckBox/styles/hover = SubResource( 4 )
-CheckBox/styles/normal = SubResource( 4 )
-CheckBox/styles/pressed = SubResource( 4 )
+CheckBox/styles/disabled = SubResource( 5 )
+CheckBox/styles/focus = SubResource( 5 )
+CheckBox/styles/hover = SubResource( 5 )
+CheckBox/styles/normal = SubResource( 5 )
+CheckBox/styles/pressed = SubResource( 5 )
 CheckButton/colors/font_color = Color( 0.878431, 0.878431, 0.878431, 1 )
 CheckButton/colors/font_color_disabled = Color( 0.9, 0.9, 0.9, 0.2 )
 CheckButton/colors/font_color_hover = Color( 0.941176, 0.941176, 0.941176, 1 )
@@ -431,29 +414,29 @@ CheckButton/constants/hseparation = 4
 CheckButton/fonts/font = null
 CheckButton/icons/off = ExtResource( 7 )
 CheckButton/icons/on = ExtResource( 8 )
-CheckButton/styles/disabled = SubResource( 5 )
-CheckButton/styles/focus = SubResource( 5 )
-CheckButton/styles/hover = SubResource( 5 )
-CheckButton/styles/normal = SubResource( 5 )
-CheckButton/styles/pressed = SubResource( 5 )
+CheckButton/styles/disabled = SubResource( 6 )
+CheckButton/styles/focus = SubResource( 6 )
+CheckButton/styles/hover = SubResource( 6 )
+CheckButton/styles/normal = SubResource( 6 )
+CheckButton/styles/pressed = SubResource( 6 )
 HScrollBar/icons/decrement = null
 HScrollBar/icons/decrement_highlight = null
 HScrollBar/icons/increment = null
 HScrollBar/icons/increment_highlight = null
-HScrollBar/styles/grabber = SubResource( 6 )
-HScrollBar/styles/grabber_highlight = SubResource( 6 )
-HScrollBar/styles/grabber_pressed = SubResource( 6 )
-HScrollBar/styles/scroll = SubResource( 7 )
-HScrollBar/styles/scroll_focus = SubResource( 7 )
+HScrollBar/styles/grabber = SubResource( 7 )
+HScrollBar/styles/grabber_highlight = SubResource( 7 )
+HScrollBar/styles/grabber_pressed = SubResource( 7 )
+HScrollBar/styles/scroll = SubResource( 8 )
+HScrollBar/styles/scroll_focus = SubResource( 8 )
 HSlider/icons/grabber = ExtResource( 11 )
 HSlider/icons/grabber_disabled = null
 HSlider/icons/grabber_highlight = ExtResource( 11 )
 HSlider/icons/tick = null
 HSlider/styles/focus = null
-HSlider/styles/grabber_area = SubResource( 5 )
+HSlider/styles/grabber_area = SubResource( 6 )
 HSlider/styles/grabber_disabled = null
 HSlider/styles/grabber_highlight = null
-HSlider/styles/slider = SubResource( 8 )
+HSlider/styles/slider = SubResource( 9 )
 LineEdit/colors/cursor_color = Color( 0.941176, 0.941176, 0.941176, 1 )
 LineEdit/colors/font_color = Color( 0.878431, 0.878431, 0.878431, 1 )
 LineEdit/colors/font_color_selected = Color( 0, 0, 0, 1 )
@@ -461,7 +444,7 @@ LineEdit/colors/selection_color = Color( 0.490196, 0.490196, 0.490196, 1 )
 LineEdit/constants/minimum_spaces = 12
 LineEdit/fonts/font = null
 LineEdit/styles/focus = null
-LineEdit/styles/normal = SubResource( 9 )
+LineEdit/styles/normal = SubResource( 10 )
 LineEdit/styles/read_only = null
 OptionButton/colors/font_color = Color( 0.878431, 0.878431, 0.878431, 1 )
 OptionButton/colors/font_color_disabled = Color( 0.9, 0.9, 0.9, 0.2 )
@@ -476,14 +459,14 @@ OptionButton/styles/focus = null
 OptionButton/styles/hover = null
 OptionButton/styles/normal = null
 OptionButton/styles/pressed = null
-Panel/styles/panel = SubResource( 10 )
+Panel/styles/panel = SubResource( 11 )
 Panel/styles/panelf = null
 Panel/styles/panelnc = null
 ProgressBar/colors/font_color = Color( 0.941176, 0.941176, 0.941176, 1 )
 ProgressBar/colors/font_color_shadow = Color( 0, 0, 0, 1 )
-ProgressBar/fonts/font = SubResource( 11 )
-ProgressBar/styles/bg = SubResource( 12 )
-ProgressBar/styles/fg = SubResource( 13 )
+ProgressBar/fonts/font = SubResource( 12 )
+ProgressBar/styles/bg = SubResource( 13 )
+ProgressBar/styles/fg = SubResource( 14 )
 TabContainer/colors/font_color_bg = Color( 0.690196, 0.690196, 0.690196, 1 )
 TabContainer/colors/font_color_disabled = Color( 0.9, 0.9, 0.9, 0.2 )
 TabContainer/colors/font_color_fg = Color( 0.941176, 0.941176, 0.941176, 1 )
@@ -499,9 +482,9 @@ TabContainer/icons/increment = null
 TabContainer/icons/increment_highlight = null
 TabContainer/icons/menu = null
 TabContainer/icons/menu_highlight = null
-TabContainer/styles/panel = SubResource( 14 )
-TabContainer/styles/tab_bg = SubResource( 15 )
-TabContainer/styles/tab_fg = SubResource( 16 )
+TabContainer/styles/panel = SubResource( 15 )
+TabContainer/styles/tab_bg = SubResource( 16 )
+TabContainer/styles/tab_fg = SubResource( 17 )
 TextEdit/colors/background_color = Color( 0, 0, 0, 0 )
 TextEdit/colors/brace_mismatch_color = Color( 1, 0.2, 0.2, 1 )
 TextEdit/colors/breakpoint_color = Color( 0.8, 0.8, 0.4, 0.2 )
@@ -531,7 +514,7 @@ TextEdit/fonts/font = null
 TextEdit/icons/tab = null
 TextEdit/styles/completion = null
 TextEdit/styles/focus = null
-TextEdit/styles/normal = SubResource( 17 )
+TextEdit/styles/normal = SubResource( 18 )
 Tree/colors/cursor_color = Color( 0, 0, 0, 1 )
 Tree/colors/custom_button_font_highlight = Color( 0.941176, 0.941176, 0.941176, 1 )
 Tree/colors/drop_position_color = Color( 1, 0.3, 0.2, 1 )
@@ -557,7 +540,7 @@ Tree/icons/checked = ExtResource( 5 )
 Tree/icons/select_arrow = null
 Tree/icons/unchecked = ExtResource( 6 )
 Tree/icons/updown = null
-Tree/styles/bg = SubResource( 18 )
+Tree/styles/bg = SubResource( 19 )
 Tree/styles/bg_focus = null
 Tree/styles/button_pressed = null
 Tree/styles/cursor = null
@@ -574,19 +557,19 @@ VScrollBar/icons/decrement = null
 VScrollBar/icons/decrement_highlight = null
 VScrollBar/icons/increment = null
 VScrollBar/icons/increment_highlight = null
-VScrollBar/styles/grabber = SubResource( 6 )
-VScrollBar/styles/grabber_highlight = SubResource( 6 )
-VScrollBar/styles/grabber_pressed = SubResource( 6 )
-VScrollBar/styles/scroll = SubResource( 7 )
-VScrollBar/styles/scroll_focus = SubResource( 7 )
+VScrollBar/styles/grabber = SubResource( 7 )
+VScrollBar/styles/grabber_highlight = SubResource( 7 )
+VScrollBar/styles/grabber_pressed = SubResource( 7 )
+VScrollBar/styles/scroll = SubResource( 8 )
+VScrollBar/styles/scroll_focus = SubResource( 8 )
 VSlider/icons/grabber = ExtResource( 20 )
 VSlider/icons/grabber_disabled = null
 VSlider/icons/grabber_highlight = ExtResource( 20 )
 VSlider/icons/tick = null
 VSlider/styles/focus = null
-VSlider/styles/grabber_area = SubResource( 5 )
+VSlider/styles/grabber_area = SubResource( 6 )
 VSlider/styles/grabber_disabled = null
 VSlider/styles/grabber_highlight = null
-VSlider/styles/slider = SubResource( 8 )
+VSlider/styles/slider = SubResource( 9 )
 _sections_unfolded = [ "Button", "Button/styles", "CheckBox/fonts", "CheckBox/styles", "CheckButton/icons", "CheckButton/styles", "HScrollBar/styles", "HSlider/icons", "HSlider/styles", "Icons", "Icons/icons", "ItemList", "ItemList/styles", "Margin", "OptionButton/constants", "OptionButton/styles", "Panel/styles", "ProgressBar/fonts", "ProgressBar/styles", "TabContainer/styles", "TextEdit/constants", "TextEdit/fonts", "TextEdit/styles", "Tree/constants", "Tree/icons", "Tree/styles", "VScrollBar/styles", "VSlider/icons", "VSlider/styles", "WindowDialog" ]
 
