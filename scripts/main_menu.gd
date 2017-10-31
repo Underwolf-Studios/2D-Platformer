@@ -1,5 +1,8 @@
 extends CanvasLayer
 
+func _ready():
+	settings.load_settings()
+
 func _on_btn_resume_pressed():
 	global.resume_game()
 
@@ -17,6 +20,7 @@ func _on_btn_quit_pressed():
 
 func _on_btn_back_pressed():
 	if $settings_menu.is_visible() == true:
+		settings.load_settings()
 		$settings_menu.hide()
 	elif $levels_menu.is_visible() == true:
 		$levels_menu.hide()

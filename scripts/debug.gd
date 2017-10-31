@@ -14,10 +14,13 @@ func _on_btn_load_savegame_pressed():
 	global.load_game()
 
 func _on_btn_print_settings_pressed():
-	print(settings.settings)
+#	print(settings.settings)
+#	print(settings.config_file.get_as_text())
+	pass
 
 func _on_btn_save_settings_pressed():
-	settings.save_settings()
+#	settings.save_settings()
+	pass
 
 func _on_btn_load_settings_pressed():
 	settings.load_settings()
