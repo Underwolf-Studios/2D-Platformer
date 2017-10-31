@@ -17,7 +17,9 @@ config/icon="res://icon.png"
 [autoload]
 
 global="*res://scripts/global.gd"
+settings="*res://scripts/settings.gd"
 scene_manager="*res://scenes/scene_manager.tscn"
+debug="*res://scenes/debug.tscn"
 
 [display]
 

@@ -607,114 +607,6 @@ text = "QUIT"
 flat = false
 _sections_unfolded = [ "Rect", "Theme", "custom_fonts" ]
 
-[node name="debug_menu" type="Control" parent="."]
-
-editor/display_folded = true
-visible = false
-anchor_left = 1.0
-anchor_top = 0.0
-anchor_right = 1.0
-anchor_bottom = 0.0
-margin_left = -955.0
-margin_top = 15.0
-margin_right = -15.0
-margin_bottom = 95.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-_sections_unfolded = [ "Rect" ]
-
-[node name="h_box_container" type="HBoxContainer" parent="debug_menu"]
-
-editor/display_folded = true
-anchor_left = 1.0
-anchor_top = 0.0
-anchor_right = 1.0
-anchor_bottom = 0.0
-margin_left = -514.0
-margin_bottom = 80.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 1
-size_flags_horizontal = 1
-size_flags_vertical = 1
-custom_constants/separation = 20
-alignment = 0
-_sections_unfolded = [ "Rect" ]
-
-[node name="btn_print" type="Button" parent="debug_menu/h_box_container"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_right = 176.0
-margin_bottom = 80.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-theme = ExtResource( 5 )
-custom_fonts/font = ExtResource( 6 )
-toggle_mode = false
-enabled_focus_mode = 2
-shortcut = null
-group = null
-text = "PRINT"
-flat = false
-_sections_unfolded = [ "custom_fonts" ]
-
-[node name="btn_save" type="Button" parent="debug_menu/h_box_container"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = 196.0
-margin_right = 342.0
-margin_bottom = 80.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-theme = ExtResource( 5 )
-custom_fonts/font = ExtResource( 6 )
-toggle_mode = false
-enabled_focus_mode = 2
-shortcut = null
-group = null
-text = "SAVE"
-flat = false
-_sections_unfolded = [ "custom_fonts" ]
-
-[node name="btn_load" type="Button" parent="debug_menu/h_box_container"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = 362.0
-margin_right = 514.0
-margin_bottom = 80.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-theme = ExtResource( 5 )
-custom_fonts/font = ExtResource( 6 )
-toggle_mode = false
-enabled_focus_mode = 2
-shortcut = null
-group = null
-text = "LOAD"
-flat = false
-_sections_unfolded = [ "Theme", "custom_fonts" ]
-
 [connection signal="pressed" from="pause_menu/v_box_container/btn_resume" to="." method="_on_btn_resume_pressed"]
 
 [connection signal="pressed" from="pause_menu/v_box_container/btn_menu" to="." method="_on_btn_menu_pressed"]
@@ -732,11 +624,5 @@ _sections_unfolded = [ "Theme", "custom_fonts" ]
 [connection signal="pressed" from="level_finished_menu/v_box_container/btn_menu" to="." method="_on_btn_menu_pressed"]
 
 [connection signal="pressed" from="level_finished_menu/v_box_container/btn_quit" to="." method="_on_btn_quit_pressed"]
-
-[connection signal="pressed" from="debug_menu/h_box_container/btn_print" to="." method="_on_btn_print_pressed"]
-
-[connection signal="pressed" from="debug_menu/h_box_container/btn_save" to="." method="_on_btn_save_pressed"]
-
-[connection signal="pressed" from="debug_menu/h_box_container/btn_load" to="." method="_on_btn_load_pressed"]
 
 

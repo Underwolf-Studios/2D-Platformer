@@ -16,10 +16,6 @@ func _input(event):
 		$health.set_visible(not game_paused)
 		$score.set_visible(not game_paused)
 
-	if event.is_action_pressed("debug"):
-		$debug_menu.set_visible(!$debug_menu.is_visible())
-
-
 func _on_global_health_changed(health):
 	if health == 3:
 		$"health/tex_health_1".show()
@@ -81,12 +77,3 @@ func _on_btn_menu_pressed():
 
 func _on_btn_quit_pressed():
 	get_tree().quit()
-
-func _on_btn_print_pressed():
-	print(global.get_state())
-
-func _on_btn_save_pressed():
-	global.save_game()
-
-func _on_btn_load_pressed():
-	global.load_game()

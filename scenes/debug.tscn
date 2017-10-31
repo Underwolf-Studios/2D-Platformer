@@ -1,0 +1,268 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://scripts/debug.gd" type="Script" id=1]
+[ext_resource path="res://themes/default.tres" type="Theme" id=2]
+[ext_resource path="res://fonts/button_big.tres" type="DynamicFont" id=3]
+
+[node name="debug" type="CanvasLayer"]
+
+layer = 1
+offset = Vector2( 0, 0 )
+rotation = 0.0
+scale = Vector2( 1, 1 )
+script = ExtResource( 1 )
+
+[node name="menu" type="VBoxContainer" parent="."]
+
+anchor_left = 1.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 0.0
+margin_left = -634.0
+margin_top = 10.0
+margin_right = -10.0
+margin_bottom = 174.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+size_flags_horizontal = 1
+size_flags_vertical = 1
+alignment = 0
+_sections_unfolded = [ "Rect" ]
+
+[node name="savegame" type="HBoxContainer" parent="menu"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 796.0
+margin_bottom = 80.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_constants/separation = 20
+alignment = 0
+_sections_unfolded = [ "Rect" ]
+
+[node name="lbl_savegame" type="Label" parent="menu/savegame"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 32.0
+margin_right = 90.0
+margin_bottom = 48.0
+rect_min_size = Vector2( 90, 0 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+size_flags_horizontal = 1
+size_flags_vertical = 4
+theme = ExtResource( 2 )
+text = "SAVEGAME"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Rect" ]
+
+[node name="btn_print_savegame" type="Button" parent="menu/savegame"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 110.0
+margin_right = 286.0
+margin_bottom = 80.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+theme = ExtResource( 2 )
+custom_fonts/font = ExtResource( 3 )
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "PRINT"
+flat = false
+_sections_unfolded = [ "custom_fonts" ]
+
+[node name="btn_save_savegame" type="Button" parent="menu/savegame"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 306.0
+margin_right = 452.0
+margin_bottom = 80.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+theme = ExtResource( 2 )
+custom_fonts/font = ExtResource( 3 )
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "SAVE"
+flat = false
+_sections_unfolded = [ "custom_fonts" ]
+
+[node name="btn_load_savegame" type="Button" parent="menu/savegame"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 472.0
+margin_right = 624.0
+margin_bottom = 80.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+theme = ExtResource( 2 )
+custom_fonts/font = ExtResource( 3 )
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "LOAD"
+flat = false
+_sections_unfolded = [ "Theme", "custom_fonts" ]
+
+[node name="settings" type="HBoxContainer" parent="menu"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 84.0
+margin_right = 796.0
+margin_bottom = 164.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_constants/separation = 20
+alignment = 0
+_sections_unfolded = [ "Rect" ]
+
+[node name="lbl_settings" type="Label" parent="menu/settings"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 32.0
+margin_right = 90.0
+margin_bottom = 48.0
+rect_min_size = Vector2( 90, 0 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+size_flags_horizontal = 1
+size_flags_vertical = 4
+theme = ExtResource( 2 )
+text = "SETTINGS"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Rect" ]
+
+[node name="btn_print_settings" type="Button" parent="menu/settings"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 110.0
+margin_right = 286.0
+margin_bottom = 80.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+theme = ExtResource( 2 )
+custom_fonts/font = ExtResource( 3 )
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "PRINT"
+flat = false
+_sections_unfolded = [ "custom_fonts" ]
+
+[node name="btn_save_settings" type="Button" parent="menu/settings"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 306.0
+margin_right = 452.0
+margin_bottom = 80.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+theme = ExtResource( 2 )
+custom_fonts/font = ExtResource( 3 )
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "SAVE"
+flat = false
+_sections_unfolded = [ "custom_fonts" ]
+
+[node name="btn_load_settings" type="Button" parent="menu/settings"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 472.0
+margin_right = 624.0
+margin_bottom = 80.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+theme = ExtResource( 2 )
+custom_fonts/font = ExtResource( 3 )
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "LOAD"
+flat = false
+_sections_unfolded = [ "Theme", "custom_fonts" ]
+
+[connection signal="pressed" from="menu/savegame/btn_print_savegame" to="." method="_on_btn_print_savegame_pressed"]
+
+[connection signal="pressed" from="menu/savegame/btn_save_savegame" to="." method="_on_btn_save_savegame_pressed"]
+
+[connection signal="pressed" from="menu/savegame/btn_load_savegame" to="." method="_on_btn_load_savegame_pressed"]
+
+[connection signal="pressed" from="menu/settings/btn_print_settings" to="." method="_on_btn_print_settings_pressed"]
+
+[connection signal="pressed" from="menu/settings/btn_save_settings" to="." method="_on_btn_save_settings_pressed"]
+
+[connection signal="pressed" from="menu/settings/btn_load_settings" to="." method="_on_btn_load_settings_pressed"]
+
+
