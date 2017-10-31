@@ -1,10 +1,11 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://scripts/main_menu.gd" type="Script" id=1]
 [ext_resource path="res://themes/default.tres" type="Theme" id=2]
 [ext_resource path="res://fonts/pixel.ttf" type="DynamicFontData" id=3]
 [ext_resource path="res://fonts/button_big.tres" type="DynamicFont" id=4]
 [ext_resource path="res://scripts/level_select.gd" type="Script" id=5]
+[ext_resource path="res://scripts/settings.gd" type="Script" id=6]
 
 [sub_resource type="DynamicFont" id=1]
 
@@ -1249,6 +1250,7 @@ mouse_filter = 2
 size_flags_horizontal = 1
 size_flags_vertical = 1
 theme = ExtResource( 2 )
+script = ExtResource( 6 )
 _sections_unfolded = [ "Rect", "Theme" ]
 
 [node name="lbl_settings_menu" type="Label" parent="settings_menu"]
@@ -1331,6 +1333,46 @@ mouse_filter = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 
+[node name="VIDEO" type="Tabs" parent="settings_menu/tab_container"]
+
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 6.0
+margin_top = 52.0
+margin_right = -6.0
+margin_bottom = -6.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+
+[node name="fullscreen" type="CheckBox" parent="settings_menu/tab_container/VIDEO"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 26.0
+margin_top = 22.0
+margin_right = 167.0
+margin_bottom = 43.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = true
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "FULLSCREEN"
+flat = false
+align = 0
+
 [node name="INPUT" type="Tabs" parent="settings_menu/tab_container"]
 
 visible = false
@@ -1384,6 +1426,8 @@ _sections_unfolded = [ "Rect", "Theme", "custom_fonts" ]
 [connection signal="pressed" from="main/v_box_container/btn_quit" to="." method="_on_btn_quit_pressed"]
 
 [connection signal="pressed" from="levels_menu/btn_back" to="." method="_on_btn_back_pressed"]
+
+[connection signal="toggled" from="settings_menu/tab_container/VIDEO/fullscreen" to="settings_menu" method="_on_fullscreen_toggled"]
 
 [connection signal="pressed" from="settings_menu/btn_back" to="." method="_on_btn_back_pressed"]
 
