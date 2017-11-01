@@ -1234,6 +1234,7 @@ _sections_unfolded = [ "Rect", "custom_fonts" ]
 
 [node name="settings_menu" type="Panel" parent="."]
 
+editor/display_folded = true
 visible = false
 anchor_left = 0.5
 anchor_top = 0.5
@@ -1280,6 +1281,7 @@ _sections_unfolded = [ "Rect", "custom_colors", "custom_constants" ]
 
 [node name="tab_container" type="TabContainer" parent="settings_menu"]
 
+editor/display_folded = true
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -1333,7 +1335,6 @@ size_flags_vertical = 1
 
 [node name="DISPLAY" type="Tabs" parent="settings_menu/tab_container"]
 
-editor/display_folded = true
 visible = false
 anchor_left = 0.0
 anchor_top = 0.0
